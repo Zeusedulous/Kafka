@@ -1,4 +1,4 @@
-package com.zeusedulous;
+package com.zeusedulous.kafka;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -18,7 +18,7 @@ public class Producer {
 
     public static void main(String[] args){
         Properties p = new Properties();
-        p.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.81.72:9092");
+        p.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.85.112:9092");
         p.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         p.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,StringSerializer.class);
 

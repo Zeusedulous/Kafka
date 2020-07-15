@@ -2,6 +2,8 @@ Kafka
 --------------------------------------------------------------------------------
 
 1. **kafka study** : java原生操作
+2. **springboot-kafka** : springboot整合kafka使用
+    kafka 版本：2.2.6 ，springboot版本：2.1.7
 
 ---
 

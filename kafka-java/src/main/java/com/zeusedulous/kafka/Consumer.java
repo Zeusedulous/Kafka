@@ -1,4 +1,4 @@
-package com.zeusedulous;
+package com.zeusedulous.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -19,7 +19,7 @@ public class Consumer {
 
     public static void main(String[] args) {
         Properties p = new Properties();
-        p.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.81.72:9092");
+        p.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.85.112:9092");
         p.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         p.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringDeserializer.class);
         p.put(ConsumerConfig.GROUP_ID_CONFIG,"test-consumer-group");
